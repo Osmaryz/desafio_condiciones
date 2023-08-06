@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\style_parte_2.css">
+    <title>Desafío Stickers</title>
+</head>
+
+<body>
+    <div class="container_principal">
+        <div class="container_sticker">
+            <img src="assets\img\sticker_1.jpg" alt="" class="stickers">
+            <input type="text" placeholder="Ingrese cantidad" id="sticker_1">
+        </div>
+        <div class="container_sticker">
+            <img src="assets\img\sticker_3.jpeg" alt="" class="stickers">
+            <input type="text" placeholder="Ingrese cantidad" id="sticker_2">
+        </div>
+        <div class="container_sticker">
+            <img src="assets\img\sticker_2.jpg" alt="" class="stickers">
+            <input type="text" placeholder="Ingrese cantidad" id="sticker_3">
+        </div>
+    </div>
+    <div id="respuesta">
+        <div>
+            <p id="Resultado"> </p>
+        </div>
+        <button onclick="
+        valor_sticker_1 = document.querySelector ('#sticker_1').value;
+        valor_sticker_2 = document.querySelector ('#sticker_2').value;
+        valor_sticker_3 = document.querySelector ('#sticker_3').value;
+        total_sticker = parseInt (valor_sticker_1) + parseInt (valor_sticker_2) + parseInt (valor_sticker_3); 
+        if (total_sticker <= 10) {
+            mensaje_final = document.querySelector ('#Resultado')
+            mensaje_final.innerHTML = 'Has seleccionado ' + total_sticker + ' sticker/s'
+        } else  {
+            mensaje_final = document.querySelector ('#Resultado')
+            mensaje_final.innerHTML = 'Llevas demasiados stickers' 
+        }
+        "> Verificar</button>
+        <a href="parte_3.html">Tercera Parte del desafío.</a>
+    </div>
+
+</body>
+
+</html>

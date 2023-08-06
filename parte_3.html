@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\style_parte_3.css">
+    <title>Desafío Selector</title>
+</head>
+
+<body>
+
+    <div class="contenedor_selectores">
+        <select name="" id="primer_num" class="selectores">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="" id="segundo_num" class="selectores">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="" id="tercer_num" class="selectores">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+    </div>
+    <div class="container_boton">
+        <button id="ingresar" onclick="
+       valor_primer_num = document.querySelector ('#primer_num'). value 
+       /*console.log( 'El valor que arroja el sistema es el siguiente : '+ valor_primer_num)*/
+       valor_segundo_num = document.querySelector ('#segundo_num').value
+       /*console.log( 'El valor que arroja el sistema es el siguiente : '+ valor_segundo_num)*/
+       valor_tercer_num = document.querySelector ('#tercer_num').value
+       /*console.log( 'El valor que arroja el sistema es el siguiente : '+ valor_tercer_num)*/
+        
+        if (valor_primer_num == 9 && valor_segundo_num== 1 && valor_tercer_num== 1 ) {
+            respuesta_1 = document.querySelector ('#parrafo_respuesta')
+            respuesta_1.innerHTML = 'Password 1 correcto'
+        } else if (valor_primer_num == 7 && valor_segundo_num== 1 && valor_tercer_num== 4) {
+            respuesta_2 = document.querySelector ('#parrafo_respuesta')
+            respuesta_2.innerHTML = 'Password 2 correcto'
+        } else {
+            respuesta_3 = document.querySelector ('#parrafo_respuesta')
+            respuesta_3.innerHTML = 'Password incorrecto'
+        }
+        "> Ingresar</button>
+    </div>
+    <div class="container_respuesta">
+        <p id="parrafo_respuesta"></p>
+    </div>
+</body>
+
+</html>

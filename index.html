@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\style_parte_1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container_img">
+        <img class="imagen_con_borde" id="imagen_sin_borde" src="assets\img\perrito_encantador.png" alt="" onclick="
+    agregar_borde = document.querySelector('#imagen_sin_borde');
+    if (!agregar_borde.classList.contains('imagen_con_borde')) {
+        agregar_borde.classList.add('imagen_con_borde') 
+} else {
+        agregar_borde.classList.remove ('imagen_con_borde')
+    }
+    ">
+        <a href="parte_2.html">Segunda parte del desafío</a>
+    </div>
+</body>
+
+</html>

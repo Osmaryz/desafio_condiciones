@@ -1,0 +1,20 @@
+.contenedor_selectores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 2em;
+}
+
+.container_boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.container_respuesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
